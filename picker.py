@@ -33,5 +33,5 @@ people = {1  :  "Sasan Bahadaran",
           14 :  "Tonja White",
           15 :  "Star Ying"}
 
-diceThrow = random.randrange(1,15)
+diceThrow = random.randrange(1,16)
 print(people[diceThrow])
