@@ -33,5 +33,9 @@ people = {1  :  "Sasan Bahadaran",
           14 :  "Tonja White",
           15 :  "Star Ying"}
 
-diceThrow = random.randrange(1,16)
-print(people[diceThrow])
+numofselection = input("Please enter the number of people you want to select:")
+
+#diceThrow = random.randrange(1,16)
+diceThrow = random.sample([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],numofselection)
+for number in diceThrow:
+	print(people[number])
