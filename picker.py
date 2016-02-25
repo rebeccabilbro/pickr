@@ -33,8 +33,17 @@ people = {1  :  "Sasan Bahadaran",
           14 :  "Tonja White",
           15 :  "Star Ying"}
 
+
+#def validate_user_input(x):
+#	try:
+#		return int(x)
+#	except ValueError:
+#		return False
+
 #prompt user for number of sample
+
 numOfPeople = input("Please enter the number of people you want to select:")
+
 dictCount = range(1,len(people)+1)
 
 diceThrow = random.sample(dictCount,numOfPeople)
