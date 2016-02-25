@@ -9,7 +9,7 @@
 
 
 """
-If we need to draw names out of a hat.
+If we need to draw names out of a hat.  Allows you to choose the number of people you want to select
 """
 
 #####################################################################
@@ -33,5 +33,14 @@ people = {1  :  "Sasan Bahadaran",
           14 :  "Tonja White",
           15 :  "Star Ying"}
 
-diceThrow = random.randrange(1,16)
-print(people[diceThrow])
+
+
+#prompt user for number of sample
+numOfPeople = input("Please enter the number of people you want to select:")
+
+dictCount = range(1,len(people)+1)
+diceThrow = random.sample(dictCount,numOfPeople)
+iter = 0
+for number in diceThrow:
+	iter+=1
+	print "pick #%s: %s" %(iter,people[number])
