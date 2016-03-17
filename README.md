@@ -8,3 +8,5 @@ By Modanung - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?
 
 ### picker.py
 If we need to draw CDS names out of a hat.
+
+### Thanks to @bahadasx for his contributions to this repo!
